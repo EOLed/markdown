@@ -24,37 +24,20 @@ Major Changes from Open Library Revision
 * Removed the automatic addition of http:// to image urls, preventing the entry of relative addresses.
 * Numerous bug fixes to both WMD and Showdown
 
-How to use
+How to use (in your CakePHP view)
 ----------
-
-	<html>
-	    <head>
-	        <title>WMD Example</title>
-        
-	        <link rel="stylesheet" type="text/css" href="wmd.css"/>
-	        <script type="text/javascript" src="wmd.js"></script>
-	        <script type="text/javascript" src="showdown.js"></script>
-	    </head>
-	    <body>
-	        <h1>WMD Example</h1>
-
-	        <div>
-	            <div id="notes-button-bar"></div>
-	            <textarea id="notes" name="copy"></textarea>
-	            <div id="notes-preview"></div>
-				<input type="text" name="copy_html" value="" id="copy_html">
-	        </div>
-
-	        <script type="text/javascript">
-	            setup_wmd({
-	                input: "notes",
-	                button_bar: "notes-button-bar",
-	                preview: "notes-preview",
-					output: "copy_html"
-	            });
-	        </script>
-	    </body>
-	</html>
+    <div class="posts form">
+        <?php echo $this->Form->create('Post'); ?>
+            <fieldset>
+                <legend><?php __('Add Post'); ?></legend>
+                <?php
+                echo $this->Form->hidden("id");
+                echo $this->Form->input('title');
+                echo $this->Wmd->input('content');
+                ?>
+            </fieldset>
+        <?php echo $this->Form->end(__('Publish', true));?>
+    </div>
 
 License
 -------
