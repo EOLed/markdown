@@ -6,7 +6,7 @@ Introduction
 
 WMD is a JavaScript based code editor for the [Markdown](http://daringfireball.net/projects/markdown/) formatting language.  It includes a Markdown interpreter – Showdown – for live preview and output of the Markdown generated HTML.
 
-This is a fork of WMD for ChiperSoft Systems & NFY Interactive designed for use in CMS engines.  It was forked from the [Open Library fork](http://github.com/openlibrary/wmd) of WMD, which was in turn forked from the [Stackoverflow fork](http://github.com/derobins/wmd).
+This is a fork of WMD for CakePHP. It was forked from ChiperSoft Systems & NFY Interactive designed for use in CMS engines, which in turn was forked from the [Open Library fork](http://github.com/openlibrary/wmd) of WMD and it from the [Stackoverflow fork](http://github.com/derobins/wmd).
 
 Major Changes from Open Library Revision
 -------------
