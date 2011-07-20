@@ -33,7 +33,7 @@ How to use (in your CakePHP view)
                 <?php
                 echo $this->Form->hidden("id");
                 echo $this->Form->input('title');
-                echo $this->Wmd->input('content');
+                echo $this->Markdown->input('content');
                 ?>
             </fieldset>
         <?php echo $this->Form->end(__('Publish', true));?>

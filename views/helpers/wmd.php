@@ -13,9 +13,9 @@ class WmdHelper extends AppHelper {
         $field_name = $this->field();
         $field_dom = $this->domId();
 
-        $this->Html->css("/wmd/css/wmd", null, array("inline" => false));
-        $this->Html->script("/wmd/js/wmd", array("inline" => false));
-        $this->Html->script("/wmd/js/showdown", array("inline" => false));
+        $this->Html->css("/markdown/css/wmd", null, array("inline" => false));
+        $this->Html->script("/markdown/js/wmd", array("inline" => false));
+        $this->Html->script("/markdown/js/showdown", array("inline" => false));
 
         $between  = $this->Html->div("", "", array("id" => "$field_dom-button-bar"));
 
