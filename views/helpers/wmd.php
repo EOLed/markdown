@@ -9,7 +9,7 @@ class WmdHelper extends AppHelper {
      * @return a WMD Markdown input.
      */
     function input($field_name, $options = array()) {
-        $this->setEntity($field_name);
+        $this->setEntity($field_name, true);
         $field_name = $this->field();
         $field_dom = $this->domId();
 
