@@ -1,6 +1,6 @@
 <?php
-App::uses("Helper", "Markdown.Wmd");
-App::uses("Lib", "Markdown.Markdown");
+App::import("Helper", "Markdown.Wmd");
+App::import("Lib", "Markdown.Markdown");
 
 /**
  * Helper for outputting a Markdown editor
