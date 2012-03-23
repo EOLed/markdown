@@ -1,6 +1,6 @@
 <?php
+require_once(APP . "/Plugin/Markdown/Vendor/markdown.php");
 App::uses("WmdHelper", "Markdown.View/Helper");
-App::uses("Markdown", "Markdown.Lib");
 
 /**
  * Helper for outputting a Markdown editor
