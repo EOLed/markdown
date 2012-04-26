@@ -1,4 +1,8 @@
 <?php
+App::uses("FormHelper", "View/Helper");
+App::uses("HtmlHelper", "View/Helper");
+App::uses("AppHelper", "View/Helper");
+
 /**
  * Helper for outputting WMD Markdown editor
  */
@@ -10,7 +14,8 @@ class WmdHelper extends AppHelper {
      */
     function input($field_name, $options = array()) {
         $this->setEntity($field_name);
-        $field_name = $this->field();
+        CakeLog::write(LOG_DEBUG, "wmd field name: $field_name");
+        CakeLog::write(LOG_DEBUG, "new wmd field name: $field_name");
         $field_dom = $this->domId();
 
         $this->Html->css("/markdown/css/wmd", null, array("inline" => false));
