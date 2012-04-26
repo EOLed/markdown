@@ -1,12 +1,12 @@
 <?php
-App::import("Helper", "Markdown.Wmd");
-App::import("Lib", "Markdown.Markdown");
+require_once(APP . "/Plugin/Markdown/Vendor/markdown.php");
+App::uses("WmdHelper", "Markdown.View/Helper");
 
 /**
  * Helper for outputting a Markdown editor
  */
 class MarkdownHelper extends AppHelper {
-    var $helpers = array("Html", "Form", "Wmd");
+    var $helpers = array("Html", "Form", "Markdown.Wmd");
 
     /**
      * @return a markdown input.
